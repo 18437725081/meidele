@@ -1,10 +1,8 @@
 package com.synco.kava.inteceptor;
 
 import com.synco.kava.annotation.Auth;
-import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
@@ -19,9 +17,6 @@ import javax.servlet.http.HttpServletResponse;
 
 @Component
 public class MyHandlerInteceptor extends HandlerInterceptorAdapter {
-
-    @Autowired
-    private StringRedisTemplate redisTemplate;
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {

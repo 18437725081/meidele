@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -32,6 +33,9 @@ public class CourseCategory extends BaseEntity {
      * 上下架状态
      */
     private ShelfState state;
+
+    /** 上架时间*/
+    private Date shelfTime;
 
     /** 课程列表*/
     @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, fetch = FetchType.LAZY)

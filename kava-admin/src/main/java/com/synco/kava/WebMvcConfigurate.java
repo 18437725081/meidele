@@ -25,7 +25,7 @@ public class WebMvcConfigurate implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(corsInterceptor).addPathPatterns("/**");
-//        registry.addInterceptor(handlerInterceptor).addPathPatterns("/admin/**");
+        registry.addInterceptor(handlerInterceptor).addPathPatterns("/admin/**");
     }
 
     @Override

@@ -8,8 +8,8 @@ import javax.persistence.Table;
 
 /**
  * 活动
- * @Author:wangshuai
- * @Date:2019/1/24
+ * @author :wangshuai
+ * @date :2019/1/24
  */
 
 @Data
