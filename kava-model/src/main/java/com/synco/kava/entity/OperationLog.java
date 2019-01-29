@@ -38,6 +38,6 @@ public class OperationLog extends BaseEntity {
     /**
      * 操作参数
      */
-    private String param;
+    private String[] params;
 }
 

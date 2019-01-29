@@ -10,8 +10,8 @@ import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
- * @Author:wangshuai
- * @Date:2018/12/20
+ * @author :wangshuai
+ * @date :2018/12/20
  */
 
 @Component

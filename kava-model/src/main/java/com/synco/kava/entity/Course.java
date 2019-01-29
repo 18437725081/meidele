@@ -107,5 +107,11 @@ public class Course extends BaseEntity {
      */
     @OneToMany(mappedBy = "course", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<ActivationCode> codes;
+
+    /** 该课程开团人员*/
+    @ElementCollection
+    @Column(name = "openId")
+    @CollectionTable(name = "o_course_team", joinColumns = @JoinColumn(name = "courseId"))
+    private List<String> openIds = new ArrayList<>();
 }
 

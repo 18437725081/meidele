@@ -3,8 +3,8 @@ package com.synco.kava.annotation;
 import java.lang.annotation.*;
 
 /**
- * @Author:wangshuai
- * @Date:2018/12/24
+ * @author :wangshuai
+ * @date :2018/12/24
  */
 
 @Inherited
